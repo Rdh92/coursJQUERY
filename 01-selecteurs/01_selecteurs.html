@@ -8,7 +8,7 @@
     <!-- BOOTSTRAP CSS  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <title>Cours JQUERY - Les sélecteurs</title>
+    <title>Cours JQUERY - Index</title>
 </head>
 <body>
     <!-- Navbar à faire      -->
@@ -17,7 +17,7 @@
         <header class="container-fluid bg-light text-primary">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="display-4">Cours JQUERY - Les sélecteurs</h1>
+                    <h1 class="display-4">Cours JQUERY - Index</h1>
                     <p class="lead">Jquery : comment sélectionner</p>
                 </div>
             </div>
@@ -109,6 +109,19 @@
                 // ici mon code à exécuter
                 console.info('3ème méthode');
             });
+
+
+            let lesP = document.getElementsByTagName('p');
+            console.log(lesP);
+
+            // let enJS = document.getElementsByTagName('p')[0].innerHTML = 'coucou du Javascript';
+            // console.log('enJS');
+
+            // même chose avec jQuery
+            $('p:first').text('Je change mon premier p avec jQuery');
+
+            // changer texte second p
+            $('p:eq(1)').text('Je change le texte du second p de la page');
         </script>
 </body>
 </html>
